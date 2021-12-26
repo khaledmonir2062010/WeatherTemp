@@ -49,7 +49,7 @@ public class TestBase {
 	@AfterSuite(groups = "regression")
 	public void CloseDriver()
 	{
-		//driver.quit();
+		driver.quit();
 	}
 
 	public void ScreenshotonFailure(ITestResult results)
