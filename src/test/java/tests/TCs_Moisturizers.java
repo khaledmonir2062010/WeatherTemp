@@ -49,11 +49,12 @@ public class TCs_Moisturizers extends TestBase {
 
 		driver.findElement(By.xpath(CLickElement)).click();
 
+		
 		//Identify the least expensive Almond Product
 		for(WebElement product:ProductsButtons)
 		{
 			String[] Prodname=product.getAttribute("onclick").split(",");
-			String moisturizersName=Prodname[0].substring(11,Prodname[0].length()-1);
+			 String moisturizersName=Prodname[0].substring(11,Prodname[0].length()-1);
 			Integer moisturizersPrice=Integer.parseInt(Prodname[1].substring(0,Prodname[1].length()-1));
 			boolean found=Arrays.asList(moisturizersName.split(" ")).contains("Almond");
 
@@ -64,9 +65,13 @@ public class TCs_Moisturizers extends TestBase {
 			}
 		}
 
-		//Click 
-		driver.findElement(By.xpath(CLickElement)).click();
-		Moisturizers_obj.OpenCart();
+//		//Click 
+//		driver.findElement(By.xpath(CLickElement)).click();
+//		Moisturizers_obj.OpenCart();
+		
+		
+//		String Actual="//td[contains(.,'moisturizersName')]";
+//		Assert.assertEquals("", "");
 	}
 
 }
