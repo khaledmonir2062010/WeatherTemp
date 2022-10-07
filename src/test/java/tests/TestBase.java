@@ -41,7 +41,7 @@ public class TestBase {
 			driver = new EdgeDriver();
 		}
 
-		String dashboardURL = "http://weathershopper.pythonanywhere.com/.";
+		String dashboardURL = "https://www.google.com/";
 		driver.navigate().to(dashboardURL);
 		driver.manage().window().maximize();
 	}

@@ -29,6 +29,7 @@ public class PageBase {
 	protected static void SetText(WebElement textElement, String value)
 	{
 		textElement.sendKeys(value);
+		
 	}
 
 	//Method for clear Text
